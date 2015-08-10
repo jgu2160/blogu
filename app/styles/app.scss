@@ -8,6 +8,9 @@ $trans: 0.25s;
 @import 'materialize';
 @import 'ember-cli-materialize';
 
+.spinner-blue, .spinner-blue-only {
+  border-color: #7E57C2; }
+
 a {
   color: $primary-color;
   transition: $trans;
@@ -40,4 +43,14 @@ a:hover,a:focus {
 
 .side-nav.fixed li:hover {
   background-color: transparent;
+}
+
+.loading {
+  margin: 0 auto;
+  margin-top: 25%;
+  display: block;
+}
+
+.hidden {
+  display: none;
 }

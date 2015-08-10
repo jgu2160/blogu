@@ -1,10 +1,14 @@
-{{#each blog in model}}
-<div class="post-preview">
+{{#each post in model}}
+<div class="card medium">
     <h3>
-        {{blog.title}}
+        {{#link-to 'post' post}}
+        {{post.title}}
+        {{/link-to}}
     </h3>
-    <p>
-        {{blog.body}}
-    </p>
+    <div class="card-content">
+        <p>
+            {{post.body}}
+        </p>
+    </div>
 </div>
 {{/each}}

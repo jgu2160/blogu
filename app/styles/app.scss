@@ -1,0 +1,42 @@
+@import 'components/color';
+@import 'components/variables';
+
+$primary-color: color("deep-purple", "lighten-1");
+$secondary-color: color("deep-purple", "lighten-3");
+$trans: 0.25s;
+
+@import 'materialize';
+@import 'ember-cli-materialize';
+
+a {
+  color: $primary-color;
+  transition: $trans;
+}
+
+a:hover,a:focus {
+  color: $secondary-color;
+  transition: $trans;
+}
+
+.card {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: block;
+}
+
+#title {
+  font-size: 3em;
+  color: $primary-color;
+  transition: $trans;
+  text-align:center;
+}
+
+#title:hover,#title:focus {
+  color: $secondary-color;
+  transition: $trans;
+}
+
+.side-nav.fixed li:hover {
+  background-color: transparent;
+}

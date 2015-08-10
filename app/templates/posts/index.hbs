@@ -1,1 +1,10 @@
-{{outlet}}
+{{#each blog in model}}
+<div class="post-preview">
+    <h3>
+        {{blog.title}}
+    </h3>
+    <p>
+        {{blog.body}}
+    </p>
+</div>
+{{/each}}
